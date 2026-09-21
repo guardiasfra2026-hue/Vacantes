@@ -1,0 +1,2 @@
+import Link from 'next/link';import {states} from '@/data/mockData';
+export function StateCards(){return <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{states.slice(0,4).map(s=><Link key={s.name} href={`/estados/${s.name.toLowerCase().replaceAll(' ','-')}`} className="rounded-3xl border border-black/10 bg-white p-5 shadow-soft hover:border-[#8BE40C]"><p className="text-sm text-gray-500">{s.name}</p><b className="mt-2 block text-4xl">{s.count}</b><span className="text-sm text-gray-600">vacantes disponibles</span></Link>)}</div>}

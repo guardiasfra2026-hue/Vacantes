@@ -1,0 +1,2 @@
+import {articles} from '@/data/mockData';import {Header} from '@/components/Header';import {Footer} from '@/components/Footer';import {ArticleCard} from '@/components/ArticleCard';
+export default function News(){return <><Header/><main className="mx-auto max-w-7xl px-4 py-12 md:px-8"><p className="text-sm font-bold uppercase text-gray-500">Blog laboral</p><h1 className="mt-2 text-4xl font-black">Noticias y consejos</h1><div className="mt-8 grid gap-6 md:grid-cols-3">{articles.map(a=><ArticleCard key={a.slug} a={a}/>)}</div></main><Footer/></>}

@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export function Footer(){return <footer className="border-t border-black/10 bg-black text-white"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-3 px-4 py-8 text-sm md:flex-row md:px-8"><span>© 2026 Vacantes</span><span className="text-[#8BE40C]">Oportunidades para todos, sin costo para candidatos.</span><Link href="/admin" className="hover:text-[#8BE40C]">Acceso administrativo</Link></div></footer>}

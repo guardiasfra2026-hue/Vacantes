@@ -1,0 +1,2 @@
+import Link from 'next/link';import {articles} from '@/data/mockData';
+export function ArticleCard({a}:{a:typeof articles[number]}){return <article className="rounded-3xl border border-black/10 bg-white p-5 shadow-soft"><span className="text-xs font-bold uppercase text-gray-500">{a.category}</span><h3 className="mt-3 text-xl font-black">{a.title}</h3><p className="mt-3 text-sm text-gray-600">{a.text}</p><Link href={`/noticias/${a.slug}`} className="mt-5 inline-block font-bold underline decoration-[#8BE40C] decoration-4 underline-offset-4">Leer más</Link></article>}
